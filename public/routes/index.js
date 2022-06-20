@@ -4,4 +4,5 @@ const profile = document.getElementById('profile');
 
 profile.onclick = function() {
     location.assign(`${myserverurl}/contact`);
+    console.log('im clicked')
 }

@@ -10,10 +10,10 @@ app.use('/images', express.static(__dirname + 'public/images'))
 
 console.log(__dirname)
 // get / request
-// app.get('', (req, res) => {
-//     res.sendFile(path.join(__dirname,'/views/index.html'))
-//     console.log("here1")
-// })
+app.get('', (req, res) => {
+    res.sendFile(path.join(__dirname,'/views/index.html'))
+    console.log("here1")
+})
 //  get /index request
 app.get('/index', (req, res) => {
     res.sendFile(path.join(__dirname,'/views/index.html'))
